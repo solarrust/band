@@ -1,0 +1,46 @@
+head
+	title Site of Masha Julanova
+	+styles('css/style.css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', 'css/animate.css')
+
+	+script('https://code.jquery.com/ui/1.11.3/jquery-ui.min.js', 'https://code.jquery.com/jquery-1.10.2.js', 'js/jquery.viewportchecker.min.js')
+
+	meta(charset="utf8")
+
+	meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+
+	link(rel="icon" type="image/x-icon" href="img/favicon.ico")
+
+	//- Скрипт для плавного появления контента
+	script.
+		jQuery(document).ready(function() {
+		    jQuery('.content_block').addClass("hidden").viewportChecker({
+		    	classToAdd: 'visible animated fadeIn',
+		    	offset: 300
+		    });
+		})
+
+	//- Скрипт для плавной прокрутки до якоря
+	script.
+		$(document).ready(function(){
+		$("nav").on("click","a", function (event) {
+		//отменяем стандартную обработку нажатия по ссылке
+				event.preventDefault();
+
+		//забираем идентификатор бока с атрибута href
+				var id  = $(this).attr('href'),
+
+		//узнаем высоту от начала страницы до блока на который ссылается якорь
+				top = $(id).offset().top;
+
+		//анимируем переход на расстояние - top за 1500 мс
+				$('body,html').animate({scrollTop: top}, 800);
+			});
+		})
+
+
+	meta(property="og:title" content="Site of Masha Julanova")
+	meta(property="og:site_name" content="Site of Masha Julanova")
+	meta(property="og:url" content="http://epic.spb.ru/band/img/header.jpg")
+	meta(property="og:description" content="Landing page for presentation any type of companies")
+	meta(property="og:image" content="http://epic.spb.ru/band/img/header.jpg")
+
