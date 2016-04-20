@@ -143,7 +143,6 @@ header .head-text h1 span
 
     text-align: right;
 
-    background: #f3f1f0;
     background: url(../img/photo2.jpg) no-repeat bottom center;
     background-color: #f3f1f0;
     background-size: cover;
@@ -203,6 +202,99 @@ header .head-text h1 span
     max-width: 46.5rem;
 
     text-align: start;
+}
+#music
+{
+    padding: 3rem 0;
+
+    text-align: center;
+    text-align: left;
+
+    background: #f8f8f8;
+}
+#music h3
+{
+    font-family: 'Oswald Regular';
+    font-size: 3.6rem;
+
+    text-align: center;
+
+    color: #241c18;
+}
+#music .jouele
+{
+    display: inline-block;
+
+    width: 45%;
+    margin: 2rem auto;
+    padding: 0 3rem;
+}
+#music .jouele-time
+{
+    font-family: 'Lora Italic';
+    font-size: 1.8rem;
+    line-height: 3rem;
+
+    color: #826b60;
+}
+#music .jouele-control-text
+{
+    font-family: 'Oswald Light';
+    font-size: 3rem;
+
+    margin-left: 5rem;
+
+    color: #241c18;
+}
+#music .jouele-play-time:after
+{
+    margin-left: 1rem;
+
+    content: '•';
+
+    color: #826b60;
+}
+#music .jouele-svg
+{
+    width: 3.2rem;
+    height: 3.2rem;
+}
+#music .jouele-control-button-icon_play .jouele-svg-color,
+#music .jouele-control-button-icon_unavailable .jouele-svg-color
+{
+    fill: #e4dddb;
+}
+#music .jouele-control-button-icon_pause .jouele-svg-color
+{
+    fill: #826b60;
+}
+#music .jouele-load-bar:after,
+#music .jouele-mine-bar:after,
+#music .jouele-play-bar:after
+{
+    height: 8px;
+
+    border-radius: 4px;
+}
+#music .jouele-mine-bar:after
+{
+    background: #826b60;
+}
+#music .jouele-load-bar:after
+{
+    background: initial;
+}
+#music .jouele-play-bar:after
+{
+    background: #e4dddb;
+}
+#music .jouele-play-lift
+{
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: -4px 0 0;
+
+    background-color: #826b60;
 }
 footer
 {

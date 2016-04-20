@@ -1,0 +1,77 @@
+#music{
+	background: @light-back;
+	text-align: center;
+	padding: 3rem 0;
+	text-align: left;
+
+	h3{
+		.Oswald(3.6rem);
+		color: @main;
+		text-align: center;
+	}
+
+	.jouele{
+		width: 45%;
+		margin: 2rem auto;
+		display: inline-block;
+		padding: 0 3rem;
+	}
+
+	.jouele-time{
+		.LoraIt(1.8rem);
+		color: @brown;
+		line-height: 3rem;
+	}
+
+	.jouele-control-text{
+		.OswaldL(3rem);
+		color: @main;
+		margin-left: 5rem;
+	}
+
+	.jouele-play-time:after{
+		content: "•";
+		color: @brown;
+		margin-left: 1rem;
+	}
+
+	.jouele-svg{
+		width: 3.2rem;
+		height: 3.2rem;
+	}
+
+	.jouele-control-button-icon_play .jouele-svg-color,
+	.jouele-control-button-icon_unavailable .jouele-svg-color{
+		fill: @light;
+	}
+
+	.jouele-control-button-icon_pause .jouele-svg-color{
+		fill: @brown;
+	}
+
+	.jouele-load-bar:after,
+	.jouele-mine-bar:after,
+	.jouele-play-bar:after{
+		height: 8px;
+		border-radius: 4px;
+	}
+
+	.jouele-mine-bar:after{
+		background: @brown;
+	}
+
+	.jouele-load-bar:after{
+		background: initial;
+	}
+
+	.jouele-play-bar:after{
+		background: @light;
+	}
+
+	.jouele-play-lift{
+		width: 1.6rem;
+		height: 1.6rem;
+		margin: -4px 0 0;
+		background-color: @brown;
+	}
+}
