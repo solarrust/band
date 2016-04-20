@@ -1,8 +1,13 @@
 #music{
 	background: @light-back;
 	text-align: center;
-	padding: 3rem 0;
 	text-align: left;
+	padding: 13rem 0;
+
+	.songs{
+		max-width: 80%;
+		margin: 0 auto;
+	}
 
 	h3{
 		.Oswald(3.6rem);
@@ -12,9 +17,8 @@
 
 	.jouele{
 		width: 45%;
-		margin: 2rem auto;
+		margin: 2rem;
 		display: inline-block;
-		padding: 0 3rem;
 	}
 
 	.jouele-time{
@@ -73,5 +77,9 @@
 		height: 1.6rem;
 		margin: -4px 0 0;
 		background-color: @brown;
+	}
+
+	.jouele-status-playing .jouele-play-lift:before{
+		border-color: @light;
 	}
 }

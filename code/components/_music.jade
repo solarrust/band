@@ -5,6 +5,7 @@ section.content-block#music
 	//- Массив для вывода песен
 	- var songs = {'media/Squares.mp3':'Squares', 'media/9 lives.mp3':'9 lives', 'media/Detroit.mp3':'Detroit', 'media/IV.mp3':'IV', 'media/Lix.mp3':'Lix', 'media/Red Moon.mp3':'Red Moon', 'media/Road Cost.mp3':'Road Cost', 'media/S.N.U.F.F..mp3':'S.N.U.F.F.', 'media/She.mp3':'She', 'media/Stay Blue.mp3':'Stay Blue', 'media/Light.mp3':'Light'}
 
-	each songName, songLink in songs
-		a.jouele(href= songLink)= songName
+	.songs
+		each songName, songLink in songs
+			a.jouele(href= songLink)= songName
 

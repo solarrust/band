@@ -205,12 +205,17 @@ header .head-text h1 span
 }
 #music
 {
-    padding: 3rem 0;
+    padding: 13rem 0;
 
     text-align: center;
     text-align: left;
 
     background: #f8f8f8;
+}
+#music .songs
+{
+    max-width: 80%;
+    margin: 0 auto;
 }
 #music h3
 {
@@ -226,8 +231,7 @@ header .head-text h1 span
     display: inline-block;
 
     width: 45%;
-    margin: 2rem auto;
-    padding: 0 3rem;
+    margin: 2rem;
 }
 #music .jouele-time
 {
@@ -295,6 +299,10 @@ header .head-text h1 span
     margin: -4px 0 0;
 
     background-color: #826b60;
+}
+#music .jouele-status-playing .jouele-play-lift:before
+{
+    border-color: #e4dddb;
 }
 footer
 {
