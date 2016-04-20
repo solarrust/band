@@ -204,3 +204,157 @@ header .head-text h1 span
 
     text-align: start;
 }
+footer
+{
+    position: relative;
+
+    width: 100%;
+    height: 96rem;
+
+    text-align: center;
+
+    background: url(../img/footer.jpg) no-repeat center;
+    background-size: cover;
+}
+footer h2
+{
+    font-family: 'Oswald Bold';
+    font-size: 8rem;
+
+    margin: 0 auto;
+    padding-top: 18rem;
+
+    text-transform: uppercase;
+}
+footer h2 a
+{
+    display: block;
+
+    text-decoration: none;
+
+    color: #e4dddb;
+}
+footer h2:after
+{
+    display: block;
+
+    max-width: 80%;
+    height: 2px;
+    margin: 3rem auto;
+
+    content: '';
+
+    background: url(../img/dotted.png) repeat-x center;
+}
+footer .social
+{
+    margin: 1rem auto;
+}
+footer .social ul
+{
+    display: block;
+
+    list-style-type: none;
+}
+footer .social ul li
+{
+    display: inline-block;
+}
+footer .social ul li a
+{
+    font-size: 4rem;
+
+    margin: 0 1.5rem;
+
+    -webkit-transition: all .3s;
+            transition: all .3s;
+
+    color: #241c18;
+}
+footer .social ul li a:hover
+{
+    color: #e4dddb;
+}
+footer .bottom
+{
+    position: absolute;
+    bottom: 0;
+
+    display: block;
+
+    width: 100%;
+    margin: 0 auto;
+}
+footer .bottom p,
+footer .bottom nav
+{
+    font-family: 'Lora Bold';
+    font-size: 1.8rem;
+
+    display: inline-block;
+
+    padding: 7rem 10%;
+
+    text-transform: uppercase;
+
+    color: #e4dddb;
+}
+footer .bottom p
+{
+    float: left;
+
+    margin: 0;
+}
+footer .bottom nav
+{
+    float: right;
+
+    text-align: right;
+}
+footer .bottom nav a
+{
+    display: inline-block;
+
+    margin: 0 1rem;
+    margin-left: 0;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #e4dddb;
+}
+footer .bottom nav a:after
+{
+    display: block;
+
+    width: 100%;
+    height: 1.5rem;
+    margin-left: 1rem;
+
+    content: '';
+    -webkit-transition: opacity .3s;
+            transition: opacity .3s;
+
+    opacity: 0;
+    background: url(../img/link-active.png) repeat-x right;
+}
+footer .bottom nav a:hover:after
+{
+    opacity: 1;
+}
+footer .bottom nav a:before
+{
+    margin-right: 1rem;
+
+    content: '•';
+
+    color: #826b60;
+}
+footer .bottom nav a:first-child:before
+{
+    display: none;
+}
+footer .bottom nav a:first-child:after
+{
+    margin-left: 0;
+}
