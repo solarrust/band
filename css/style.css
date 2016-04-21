@@ -84,7 +84,7 @@ header nav a:after
             transition: opacity .3s;
 
     opacity: 0;
-    background: url(../img/link-active.png) repeat-x right;
+    background: url(../img/link-active-light.png) repeat-x right;
 }
 header nav a:hover:after
 {
@@ -106,6 +106,10 @@ header nav a:first-child:after
 {
     margin-left: 0;
 }
+header .lang
+{
+    float: right;
+}
 header .head-text
 {
     float: right;
@@ -121,19 +125,19 @@ header .head-text
 }
 header .head-text h1
 {
-    font-family: 'Oswald Bold';
+    font-family: 'Oswald Bold', sans-serif;
     font-size: 10rem;
     line-height: 7.8rem;
 
     text-transform: uppercase;
 
-    color: #e4dddb;
+    color: #241c18;
 }
 header .head-text h1 span
 {
     display: block;
 
-    color: #241c18;
+    color: #e4dddb;
 }
 #about
 {
@@ -160,7 +164,7 @@ header .head-text h1 span
 }
 #about h2
 {
-    font-family: 'Oswald Bold';
+    font-family: 'Oswald Bold', sans-serif;
     font-size: 10rem;
     line-height: 7.8rem;
 
@@ -190,7 +194,7 @@ header .head-text h1 span
 }
 #about article h3
 {
-    font-family: 'Oswald Regular';
+    font-family: 'Oswald Regular', sans-serif;
     font-size: 3.6rem;
 }
 #about article p
@@ -219,7 +223,7 @@ header .head-text h1 span
 }
 #music h3
 {
-    font-family: 'Oswald Regular';
+    font-family: 'Oswald Regular', sans-serif;
     font-size: 3.6rem;
 
     text-align: center;
@@ -240,7 +244,7 @@ header .head-text h1 span
 }
 #music .jouele-time
 {
-    font-family: 'Oswald Regular';
+    font-family: 'Oswald Regular', sans-serif;
     font-size: 1.5rem;
     line-height: 4.5rem;
 
@@ -248,7 +252,7 @@ header .head-text h1 span
 }
 #music .jouele-control-text
 {
-    font-family: 'Oswald Light';
+    font-family: 'Oswald Light', sans-serif;
     font-size: 3rem;
 
     margin-left: 5rem;
@@ -323,7 +327,7 @@ footer
 }
 footer h2
 {
-    font-family: 'Oswald Bold';
+    font-family: 'Oswald Bold', sans-serif;
     font-size: 8rem;
 
     margin: 0 auto;
@@ -441,7 +445,7 @@ footer .bottom nav a:after
             transition: opacity .3s;
 
     opacity: 0;
-    background: url(../img/link-active.png) repeat-x right;
+    background: url(../img/link-active-light.png) repeat-x right;
 }
 footer .bottom nav a:hover:after
 {

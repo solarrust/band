@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Композитор Маша Жуланова</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="../css/animate.css">
+      <link rel="stylesheet" type="text/css" href="../css/jouele.css">
+      <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="../js/jquery.viewportchecker.min.js"></script>
+      <script src="../js/jouele.js"></script>
+      <script src="../js/jquery.jplayer.min.js"></script>
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <script>
+      jQuery(document).ready(function() {
+          jQuery('.content_block').addClass("hidden").viewportChecker({
+          	classToAdd: 'visible animated fadeIn',
+          	offset: 300
+          });
+      })
+      
+    </script>
+    <script>
+      $(document).ready(function(){
+      $("nav").on("click","a", function (event) {
+      //отменяем стандартную обработку нажатия по ссылке
+      		event.preventDefault();
+      
+      //забираем идентификатор блока с атрибута href
+      		var id  = $(this).attr('href'),
+      
+      //узнаем высоту от начала страницы до блока на который ссылается якорь
+      		top = $(id).offset().top;
+      
+      //анимируем переход на расстояние - top за 1500 мс
+      		$('body,html').animate({scrollTop: top}, 800);
+      	});
+      })
+      
+      
+    </script>
+    <meta property="og:title" content="Композитор Маша Жуланова">
+    <meta property="og:site_name" content="Композитор Маша Жуланова">
+    <meta property="og:url" content="http://epic.spb.ru/band/img/header.jpg">
+    <meta property="og:description" content="Сайт композитора и музыканта Маша Жуланова. Создание музыки для фильмов, рекламы и игр.">
+    <meta property="og:image" content="http://epic.spb.ru/band/img/header.jpg">
+  </head>
+  <body>
+    <header>
+      <nav><a href="#">Главная</a><a href="#about">Обо мне</a><a href="#music">Музыка</a><a href="#contact">Контакты</a>
+      <div class="lang"><a href="../index.html">Eng</a><a href="#">Рус</a></div></nav>
+      <div class="head-text">
+        <h1>Я <span>композитор</span></h1>
+      </div>
+    </header>
+    <main>
+      <section id="about" class="content-block">
+        <div class="text">
+          <h2>Маша <span>Жуланова</span></h2>
+        </div>
+        <article>
+          <h3>Узнайте меня</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis iusto debitis ratione officia nesciunt totam, delectus magni, excepturi accusamus voluptate laudantium doloremque minus voluptates quisquam cumque temporibus asperiores fugiat. Corporis.</p>
+        </article>
+      </section>
+      <section id="music" class="content-block">
+        <h3>
+          Послушайте мою музыку
+        </h3>
+        <div class="songs"><a href="../media/Squares.mp3" class="jouele">Squares</a><a href="../media/9 lives.mp3" class="jouele">9 lives</a><a href="../media/Detroit.mp3" class="jouele">Detroit</a><a href="../media/IV.mp3" class="jouele">IV</a><a href="../media/Lix.mp3" class="jouele">Lix</a><a href="../media/Red Moon.mp3" class="jouele">Red Moon</a><a href="../media/Road Cost.mp3" class="jouele">Road Cost</a><a href="../media/S.N.U.F.F..mp3" class="jouele">S.N.U.F.F.</a><a href="../media/She.mp3" class="jouele">She</a><a href="../media/Stay Blue.mp3" class="jouele">Stay Blue</a><a href="../media/Light.mp3" class="jouele">Light</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>Контакты <a href="mailto:julanova.m@gmail.com">julanova.m@gmail.com</a></h2>
+      <div class="social">
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=100010987845601"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://vk.com/id247466510"><i class="fa fa-vk"></i></a></li>
+          <!-- <li><a href="youtube.com"><i class="fa fa-youtube"></i></a></li> -->
+        </ul>
+      </div>
+      <div class="bottom">
+        <p class="copy">
+          Copyright 2016 © by Hell B
+        </p>
+        <nav><a href="#">Главная</a><a href="#about">Обо мне</a><a href="#music">Музыка</a><a href="#contact">Контакты</a></nav>
+      </div>
+    </footer>
+  </body>
+</html>
