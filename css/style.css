@@ -52,7 +52,7 @@ header nav
     width: 80%;
     max-width: 149rem;
     margin: 0 auto;
-    padding-top: 8vh;
+    padding-top: 4vh;
 
     text-align: left;
 }
@@ -116,7 +116,7 @@ header .head-text
 
     height: 60%;
     margin: 0 auto;
-    padding: 0 5rem;
+    padding: 5rem;
 
     text-align: center;
 
@@ -186,7 +186,7 @@ header .head-text h1 span
 
     max-width: 45%;
     margin-top: 20%;
-    margin-right: 15%;
+    margin-right: 10%;
 
     text-align: center;
 
@@ -236,8 +236,8 @@ header .head-text h1 span
 
     box-sizing: border-box;
     width: 45%;
-    margin: 2.5rem;
-    padding: 1rem;
+    margin: 2%;
+    padding: 2%;
 
     border-radius: 4px;
     box-shadow: 0 1px 2px #826b60;
@@ -337,6 +337,8 @@ footer h2
 }
 footer h2 a
 {
+    font-size: 6rem;
+
     display: block;
 
     text-decoration: none;
@@ -466,4 +468,83 @@ footer .bottom nav a:first-child:before
 footer .bottom nav a:first-child:after
 {
     margin-left: 0;
+}
+@media screen and (max-width: 850px)
+{
+    #music .jouele
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 740px)
+{
+    header nav
+    {
+        text-align: center;
+    }
+    header nav .lang
+    {
+        position: absolute;
+        top: 0;
+        right: 5%;
+    }
+    header nav .lang a
+    {
+        font-size: 1.2rem;
+    }
+    footer .bottom nav
+    {
+        float: none;
+
+        box-sizing: border-box;
+        width: 100%;
+        padding: 7rem 2%;
+
+        text-align: center;
+    }
+    header .head-text h1,
+    #about h2,
+    footer h2
+    {
+        font-size: 6rem;
+    }
+    #about .text
+    {
+        left: 40%;
+    }
+}
+@media screen and (max-width: 640px)
+{
+    header .head-text
+    {
+        float: none;
+
+        padding: 5rem 0;
+    }
+    header .head-text h1
+    {
+        color: #e4dddb;
+    }
+    footer h2 a
+    {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 565px)
+{
+    header nav
+    {
+        width: 100%;
+    }
+    #about .text
+    {
+        right: 0;
+        left: 0;
+
+        max-width: 100%;
+    }
+    #about .text h2 span
+    {
+        color: #826b60;
+    }
 }
