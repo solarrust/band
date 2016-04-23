@@ -3,6 +3,14 @@ html
 {
     font-size: 62.5%;
 }
+.hidden-menu-ticker
+{
+    display: none;
+}
+ul
+{
+    padding: 0;
+}
 @font-face
 {
     font-family: 'Lora Bold';
@@ -498,7 +506,7 @@ footer .bottom nav a:first-child:after
 
         box-sizing: border-box;
         width: 100%;
-        padding: 7rem 2%;
+        padding: 7rem 0;
 
         text-align: center;
     }
@@ -546,5 +554,171 @@ footer .bottom nav a:first-child:after
     #about .text h2 span
     {
         color: #826b60;
+    }
+}
+@media screen and (max-width: 460px)
+{
+    .hidden-menu
+    {
+        position: fixed;
+        z-index: 990;
+        top: 0;
+        left: -200px;
+
+        display: block;
+
+        box-sizing: border-box;
+        width: 200px;
+        height: 100%;
+        margin: 0;
+        padding: 10px;
+
+        list-style: none;
+
+        -webkit-transition: left .2s;
+                transition: left .2s;
+        -webkit-transform: translateZ(0);
+
+        background-color: #f8f8f8;
+
+        -webkit-backface-visibility: hidden;
+    }
+    .hidden-menu-ticker
+    {
+        display: none;
+    }
+    .btn-menu
+    {
+        position: fixed;
+        z-index: 999;
+        top: 5px;
+        left: 5px;
+
+        width: 25px;
+        padding: 5px;
+
+        cursor: pointer;
+        -webkit-transition: left .23s;
+                transition: left .23s;
+        -webkit-transform: translateZ(0);
+
+        color: #826b60;
+        background-color: initial;
+
+        -webkit-backface-visibility: hidden;
+    }
+    .btn-menu span
+    {
+        position: relative;
+
+        display: block;
+
+        height: 5px;
+        margin: 5px 0 0;
+
+        -webkit-transition: all .1s linear .23s;
+                transition: all .1s linear .23s;
+
+        background-color: #241c18;
+    }
+    .btn-menu span.first
+    {
+        margin-top: 0;
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu
+    {
+        left: 160px;
+    }
+    .hidden-menu-ticker:checked ~ .hidden-menu
+    {
+        left: 0;
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu span.first
+    {
+        top: 10px;
+
+        -webkit-transform: rotate(45deg);
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu span.second
+    {
+        opacity: 0;
+    }
+    .hidden-menu-ticker:checked ~ .btn-menu span.third
+    {
+        top: -10px;
+
+        -webkit-transform: rotate(-45deg);
+    }
+    #about
+    {
+        height: 65rem;
+
+        background: none;
+        background-color: #f3f1f0;
+    }
+    #about article
+    {
+        display: block;
+
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 0;
+        margin-right: 0;
+        padding-top: 20%;
+    }
+    #about article h3
+    {
+        margin: 0;
+    }
+    #music .jouele-control-text
+    {
+        font-size: 2rem;
+    }
+    #music .jouele
+    {
+        padding: 6% 2%;
+    }
+    header nav a
+    {
+        display: block;
+
+        padding: 1rem 0;
+
+        text-align: start;
+    }
+    header nav a:after
+    {
+        display: none;
+    }
+    header nav a:first-child:before
+    {
+        display: inline;
+    }
+    header nav .lang
+    {
+        position: relative;
+        right: 0;
+
+        float: none;
+    }
+    header nav .lang a
+    {
+        display: inline-block;
+    }
+    header nav .lang a:first-child:before
+    {
+        display: none;
+    }
+    footer h2
+    {
+        font-size: 4rem;
+    }
+    footer h2 a
+    {
+        font-size: 2.5rem;
+    }
+    footer .bottom
+    {
+        display: none;
     }
 }

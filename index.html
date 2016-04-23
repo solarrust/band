@@ -15,21 +15,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <script>
-      jQuery(document).ready(function() {
-          jQuery('.content_block').addClass("hidden").viewportChecker({
-          	classToAdd: 'visible animated fadeIn',
-          	offset: 300
-          });
-      })
-      
-    </script>
-    <script>
       $(document).ready(function(){
       $("nav").on("click","a", function (event) {
       //отменяем стандартную обработку нажатия по ссылке
       		event.preventDefault();
       
-      //забираем идентификатор бока с атрибута href
+      //забираем идентификатор блока с атрибута href
       		var id  = $(this).attr('href'),
       
       //узнаем высоту от начала страницы до блока на который ссылается якорь
@@ -49,8 +40,10 @@
     <meta property="og:image" content="http://epic.spb.ru/band/img/header.jpg">
   </head>
   <body>
-    <header>
-      <nav><a href="#">Home</a><a href="#about">About</a><a href="#music">Music</a><a href="#contact">Contact</a>
+    <header id="top">
+      <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+      <label for="hmt" class="btn-menu"><span class="first"></span><span class="second"></span><span class="third"></span></label>
+      <nav class="hidden-menu"><a href="#top">Home</a><a href="#about">About</a><a href="#music">Music</a><a href="#contact">Contact</a>
         <div class="lang"><a href="#">Eng</a><a href="ru/index.html">Рус</a></div>
       </nav>
       <div class="head-text">
@@ -58,7 +51,7 @@
       </div>
     </header>
     <main>
-      <section id="about" class="content-block">
+      <section id="about">
         <div class="text">
           <h2>Masha <span>Julanova</span></h2>
         </div>
@@ -68,7 +61,7 @@
           <p>I am open to cooperation with film directors, creators of video games and organizers of fashion displays.</p>
         </article>
       </section>
-      <section id="music" class="content-block">
+      <section id="music">
         <h3>
           Listen my music
           
