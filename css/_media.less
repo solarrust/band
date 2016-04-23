@@ -4,22 +4,32 @@
 			width: 100%;
 		}
 	}
+
+	header .head-text {
+		padding: 6% 2%;
+	}
 }
 
 @media screen and (max-width:740px) {
-	header nav{
-		text-align: center;
+	header {
+		min-height: 38rem;
+		height: 100%;
 
-		.lang {
-			position: absolute;
-    	top: 0;
-    	right: 5%;
+		nav{
+			text-align: center;
 
-			a{
-				font-size: 1.2rem;
+			.lang {
+				position: absolute;
+	    	top: 0;
+	    	right: 5%;
+
+				a{
+					font-size: 1.2rem;
+				}
 			}
 		}
 	}
+
 
 	footer .bottom nav{
 		float: none;
@@ -43,7 +53,6 @@
 @media screen and (max-width:640px) {
 	header .head-text {
 		float: none;
-		padding: 5rem 0;
 
 		h1{
 			color: @light;
@@ -71,7 +80,7 @@
 	}
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:480px) {
 	//Burger menu styles
 	.hidden-menu {
 	  display: block;
@@ -159,53 +168,80 @@
 				margin: 0;
 			}
 		}
+
+		h2{
+			font-size: 4rem;
+			line-height: normal;
+		}
 	}
 
-	#music .jouele-control-text{
-		font-size: 2rem;
+	#music {
+		padding: 20% 0;
+
+		.jouele-control-text{
+			font-size: 1.8rem;
+		}
+
+		.jouele{
+			padding: 6% 2%;
+		}
 	}
 
-	#music .jouele{
-		padding: 6% 2%;
+	header {
+		height: 100%;
+
+			nav a{
+			display: block;
+			text-align: start;
+			padding: 1rem 0;
+
+			&:after{
+				display: none;
+			}
+
+			&:first-child:before{
+				display: inline;
+			}
+		}
+
+		nav .lang{
+			position: relative;
+			right: 0;
+			float: none;
+
+			a{
+				display: inline-block;
+
+				&:first-child:before{
+					display: none;
+				}
+			}
+		}
+
+		.head-text h1{
+			font-size: 4rem;
+			line-height: normal;
+		}
 	}
 
-	header nav a{
-		display: block;
-		text-align: start;
-		padding: 1rem 0;
+	footer {
+		height: 100%;
 
-		&:after{
+		h2{
+		font-size: 4rem;
+		padding-top: 20%;
+
+			a{
+				font-size: 2.5rem;
+			}
+		}
+
+		.bottom{
 			display: none;
 		}
 
-		&:first-child:before{
-			display: inline;
+		.social ul li a{
+			color: @light;
 		}
-	}
-
-	header nav .lang{
-		position: relative;
-		right: 0;
-		float: none;
-
-		a{
-			display: inline-block;
-
-			&:first-child:before{
-				display: none;
-			}
-		}
-	}
-
-	footer h2{
-		font-size: 4rem;
-
-		a{
-			font-size: 2.5rem;
-		}
-	}
-
-	footer .bottom{
-		display: none;
 	}
 }

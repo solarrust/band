@@ -17,7 +17,7 @@
 
     <script>
       $(document).ready(function(){
-      $("nav").on("click","a", function (event) {
+      $("nav").on("click","a.main", function (event) {
       //отменяем стандартную обработку нажатия по ссылке
       		event.preventDefault();
       
@@ -44,7 +44,7 @@
     <header id="top">
       <input type="checkbox" id="hmt" class="hidden-menu-ticker">
       <label for="hmt" class="btn-menu"><span class="first"></span><span class="second"></span><span class="third"></span></label>
-      <nav class="hidden-menu"><a href="#top">Главная</a><a href="#about">Обо мне</a><a href="#music">Музыка</a><a href="#contact">Контакты</a>
+      <nav class="hidden-menu"><a class="main" href="#top">Главная</a><a class="main" href="#about">Обо мне</a><a class="main" href="#music">Музыка</a><a class="main" href="#contact">Контакты</a>
       <div class="lang"><a href="../index.html">Eng</a><a href="#">Рус</a></div></nav>
       <div class="head-text">
         <h1>Я <span>композитор</span></h1>

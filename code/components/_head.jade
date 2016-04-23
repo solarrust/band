@@ -1,8 +1,8 @@
 head
 	title Site of Masha Julanova
-	+styles('css/style.css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', 'css/animate.css', 'css/jouele.css')
+	+styles('css/style.css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', 'css/jouele.css')
 
-	+script('https://code.jquery.com/ui/1.11.3/jquery-ui.min.js', 'https://code.jquery.com/jquery-1.10.2.js', 'js/jquery.viewportchecker.min.js', 'js/jouele.js', 'js/jquery.jplayer.min.js')
+	+script('https://code.jquery.com/ui/1.11.3/jquery-ui.min.js', 'https://code.jquery.com/jquery-1.10.2.js', 'js/jouele.js', 'js/jquery.jplayer.min.js')
 
 	meta(charset="utf8")
 
@@ -13,7 +13,7 @@ head
 	//- Скрипт для плавной прокрутки до якоря
 	script.
 		$(document).ready(function(){
-		$("nav").on("click","a", function (event) {
+		$("nav").on("click","a.main", function (event) {
 		//отменяем стандартную обработку нажатия по ссылке
 				event.preventDefault();
 

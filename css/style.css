@@ -483,9 +483,18 @@ footer .bottom nav a:first-child:after
     {
         width: 100%;
     }
+    header .head-text
+    {
+        padding: 6% 2%;
+    }
 }
 @media screen and (max-width: 740px)
 {
+    header
+    {
+        height: 100%;
+        min-height: 38rem;
+    }
     header nav
     {
         text-align: center;
@@ -526,8 +535,6 @@ footer .bottom nav a:first-child:after
     header .head-text
     {
         float: none;
-
-        padding: 5rem 0;
     }
     header .head-text h1
     {
@@ -556,7 +563,7 @@ footer .bottom nav a:first-child:after
         color: #826b60;
     }
 }
-@media screen and (max-width: 460px)
+@media screen and (max-width: 480px)
 {
     .hidden-menu
     {
@@ -670,13 +677,26 @@ footer .bottom nav a:first-child:after
     {
         margin: 0;
     }
+    #about h2
+    {
+        font-size: 4rem;
+        line-height: normal;
+    }
+    #music
+    {
+        padding: 20% 0;
+    }
     #music .jouele-control-text
     {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     #music .jouele
     {
         padding: 6% 2%;
+    }
+    header
+    {
+        height: 100%;
     }
     header nav a
     {
@@ -709,9 +729,20 @@ footer .bottom nav a:first-child:after
     {
         display: none;
     }
+    header .head-text h1
+    {
+        font-size: 4rem;
+        line-height: normal;
+    }
+    footer
+    {
+        height: 100%;
+    }
     footer h2
     {
         font-size: 4rem;
+
+        padding-top: 20%;
     }
     footer h2 a
     {
@@ -720,5 +751,9 @@ footer .bottom nav a:first-child:after
     footer .bottom
     {
         display: none;
+    }
+    footer .social ul li a
+    {
+        color: #e4dddb;
     }
 }

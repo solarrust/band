@@ -4,11 +4,9 @@
     <title>Site of Masha Julanova</title>
       <link rel="stylesheet" type="text/css" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="css/animate.css">
       <link rel="stylesheet" type="text/css" href="css/jouele.css">
       <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-      <script src="js/jquery.viewportchecker.min.js"></script>
       <script src="js/jouele.js"></script>
       <script src="js/jquery.jplayer.min.js"></script>
     <meta charset="utf8">
@@ -16,7 +14,7 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <script>
       $(document).ready(function(){
-      $("nav").on("click","a", function (event) {
+      $("nav").on("click","a.main", function (event) {
       //отменяем стандартную обработку нажатия по ссылке
       		event.preventDefault();
       
@@ -43,7 +41,7 @@
     <header id="top">
       <input type="checkbox" id="hmt" class="hidden-menu-ticker">
       <label for="hmt" class="btn-menu"><span class="first"></span><span class="second"></span><span class="third"></span></label>
-      <nav class="hidden-menu"><a href="#top">Home</a><a href="#about">About</a><a href="#music">Music</a><a href="#contact">Contact</a>
+      <nav class="hidden-menu"><a href="#top" class="main">Home</a><a href="#about" class="main">About</a><a href="#music" class="main">Music</a><a href="#contact" class="main">Contact</a>
         <div class="lang"><a href="#">Eng</a><a href="ru/index.html">Рус</a></div>
       </nav>
       <div class="head-text">
