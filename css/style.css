@@ -155,8 +155,10 @@ header .head-text h1 span
 
     text-align: right;
 
-    background: url(../img/photo2.jpg) no-repeat bottom center;
+    background: url(../img/masha.jpg) no-repeat;
     background-color: #f3f1f0;
+    background-position-x: -60%;
+    background-position-y: bottom;
     background-size: cover;
 }
 #about .text
@@ -190,11 +192,13 @@ header .head-text h1 span
 }
 #about article
 {
+    position: absolute;
+    top: 3rem;
+    left: 10%;
+
     display: inline-block;
 
     max-width: 45%;
-    margin-top: 20%;
-    margin-right: 10%;
 
     text-align: center;
 
